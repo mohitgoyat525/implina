@@ -26,14 +26,14 @@ const HowItWork = () => {
                 className="w-full h-full rounded-3xl"
               />
             ) : (
-              <div className="w-full max-w-[372px] bg-offYellow max-md:w-[320px] max-md:top-[15px] max-md:left-[15px]  py-[9px] px-[3px] h-[144px] absolute top-[24px] left-[29px]">
-                <p className="text-center text-customXl leading-[21px] font-bold font-sans-bold max-w-[375px] mx-auto text-black">
+              <div className="w-full max-w-[372px] bg-offYellow max-md:w-[250px] max-sm:h-[120px] max-md:top-[15px] max-md:left-[15px]  py-[9px] px-[3px] h-[144px] absolute top-[24px] left-[29px]">
+                <p className="text-center text-customXl max-md:text-sm leading-[21px] font-bold font-sans-bold max-w-[375px] mx-auto text-black">
                   VIDEO CAN BE EXCHANGED FOR CAMPAIGNS.
                 </p>
-                <p className="text-center text-customXl leading-[21px] font-bold font-sans-bold text-black pt-7">
+                <p className="text-center text-customXl max-md:text-sm leading-[21px] font-bold font-sans-bold text-black pt-7 max-md:pt-3">
                   -Titel: Name of Campaign
                 </p>
-                <p className="text-center text-customXl leading-[21px] font-bold font-sans-bold text-black">
+                <p className="text-center text-customXl max-md:text-sm leading-[21px] font-bold font-sans-bold text-black">
                   -Button: Join the campaign!
                 </p>
               </div>

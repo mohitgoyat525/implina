@@ -36,7 +36,7 @@ const Hero = () => {
         alt="cartoon"
         width={562}
         height={562}
-        className="pointer-events-none object-cover max-w-[478px] absolute bottom-[-73px] left-0 max-xl:max-w-[320px] max-lg:max-w-[200px] max-sm:max-w-[100px] max-lg:bottom-0"
+        className="pointer-events-none object-cover max-w-[478px] absolute bottom-[-73px] left-0 max-xl:max-w-[320px] max-lg:max-w-[200px] max-sm:max-w-[160px] max-lg:bottom-0"
       />
     </div>
   );
