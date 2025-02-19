@@ -13,7 +13,7 @@ const HowItWork = () => {
     <div className="bg-offWhite pt-[128px] pb-[144px] max-xl:py-24 max-lg:py-20 max-md:py-16 max-sm:py-10">
       <div className="container">
         <CustomHeading headingText="HOW IT WORKS" />
-        <div className="mt-[64px]">
+        <div className="mt-[64px] max-md:mt-12 max-sm:mt-8">
           <div
             onClick={youtubeHandler}
             className="bg-center bg-cover bg-no-repeat bg-youtubeBgImg min-w-[1064px] max-xl:max-w-[1064px] max-xl:min-w-min max-lg:h-[500px] max-md:h-[450px] max-sm:h-[320px] h-[580px] rounded-3xl relative"
