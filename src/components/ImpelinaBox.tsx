@@ -9,7 +9,7 @@ const ImpelinaBox = () => {
   return (
     <div className=" container pt-[134px] pb-[128px] max-xl:py-24 max-lg:py-20 max-md:py-14 max-sm:py-10">
       <CustomHeading headingText="IMPLENIA KICKBOX" />
-      <p className="text-darkBlack text-customXl font-light leading-7 pt-4">
+      <p className="text-darkBlack text-customXl font-light font-sans-light leading-7 pt-4">
         Since 2019, our Kickbox Intrapreneurship Program has been inspiring
         employees across all divisions to turn their ideas into impactful
         solutions. From validating ideas (RedBox) to piloting projects (BlueBox)
@@ -21,16 +21,16 @@ const ImpelinaBox = () => {
         <div className="flex items-center gap-[71px] max-lg:gap-10 max-md:gap-5 flex-wrap max-md:justify-center">
           {KICKBOX_LIST.map((item, index) => (
             <div key={index} className="flex items-center flex-col">
-              <p className="font-normal text-custom4xl leading-[100px] text-[#FEBE32] max-xl:text-6xl  max-md:text-5xl max-sm:text-4xl">
+              <p className="font-normal text-custom4xl font-sans-regular leading-[100px] text-[#FEBE32] max-xl:text-6xl  max-md:text-5xl max-sm:text-4xl">
                 {item.number}
               </p>
-              <p className="font-bold text-customXl leading-[21px]">
+              <p className="font-bold font-sans-bold text-customXl leading-[21px]">
                 {item.name}
               </p>
             </div>
           ))}
         </div>
-        <button className="text-lightRed max-md:mx-auto border border-solid border-lightRed rounded-full min-w-[268px] h-[58px] flex items-center justify-center font-bold text-customXl leading-[21px] transition-all ease-linear duration-300 hover:text-white hover:bg-lightRed">
+        <button className="text-lightRed max-md:mx-auto border border-solid border-lightRed rounded-full min-w-[268px] h-[58px] flex items-center justify-center font-bold font-sans-bold text-customXl max-sm:text-lg leading-[21px] transition-all ease-linear duration-300 hover:text-white hover:bg-lightRed">
           Submit your idea!
         </button>
       </div>

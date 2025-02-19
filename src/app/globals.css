@@ -1,13 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@font-face {
+  font-family: "source-sans-bold";
+  src: url("../../public/assets/fonts/SourceSansPro-Bold.otf")}
+@font-face {
+  font-family: "source-sans-regular";
+  src: url("../../public/assets/fonts/SourceSansPro-Regular.otf")}
+@font-face {
+  font-family: "source-sans-light";
+  src: url("../../public/assets/fonts/SourceSansPro-Light.otf")}
+@font-face {
+  font-family: "source-sans-semibold";
+  src: url("../../public/assets/fonts/SourceSansPro-Semibold.otf")}
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: "Source Sans 3", serif;
-}
 
 .text-shadow {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+
