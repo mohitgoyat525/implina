@@ -1,8 +1,16 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import CustomHeading from "./common/CustomHeading";
 import { KICKBOX_LIST } from "@/utils/helper";
+import { useInView } from "react-intersection-observer";
+import CountUp from "react-countup";
 
 const ImpelinaBox = () => {
+  const [count, setCount] = useState(false);
+  const { ref } = useInView({
+    triggerOnce: true,
+    onChange: (inView) =>setCount(inView),
+  });
   interface CustomHeadingProps {
     headingText: string;
     myClass: string;
@@ -19,11 +27,11 @@ const ImpelinaBox = () => {
         and bring your idea to life!
       </p>
       <div className="flex items-center justify-between mt-5 max-lg:flex-wrap gap-9">
-        <div className="flex items-center gap-[71px] max-lg:gap-10 max-md:gap-5 flex-wrap max-md:justify-center">
-          {KICKBOX_LIST.map((item, index) => (
-            <div key={index} className="flex items-center flex-col">
+        <div ref={ref} className="flex items-center gap-[71px] max-lg:gap-10 max-md:gap-5 flex-wrap max-md:justify-center">
+          {KICKBOX_LIST.map((item, i) => (
+            <div key={i} className="flex items-center flex-col">
               <p className="font-normal text-custom4xl font-sans-regular leading-[100px] text-offYellow max-xl:text-6xl  max-md:text-5xl max-sm:text-4xl">
-                {item.number}
+                + <CountUp start={0} end={count && i === 0 ? 155:count && i === 1 ? 325 : i === 2 ? 250:0} duration={100}/>
               </p>
               <p className="font-bold font-sans-bold text-customXl leading-[21px]">
                 {item.name}
