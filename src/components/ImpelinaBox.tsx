@@ -5,11 +5,12 @@ import { KICKBOX_LIST } from "@/utils/helper";
 const ImpelinaBox = () => {
   interface CustomHeadingProps {
     headingText: string;
+    myClass: string;
   }
   return (
     <div className=" container pt-[134px] pb-[128px] max-xl:py-24 max-lg:py-20 max-md:py-14 max-sm:py-10">
-      <CustomHeading headingText="IMPLENIA KICKBOX" />
-      <p className="text-darkBlack text-customXl font-light font-sans-light leading-7 pt-4">
+      <CustomHeading headingText="IMPLENIA KICKBOX" myClass="max-md:text-center" />
+      <p className="text-darkBlack text-customXl font-light font-sans-light leading-7 pt-4 max-md:text-center">
         Since 2019, our Kickbox Intrapreneurship Program has been inspiring
         employees across all divisions to turn their ideas into impactful
         solutions. From validating ideas (RedBox) to piloting projects (BlueBox)

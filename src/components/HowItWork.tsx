@@ -12,7 +12,7 @@ const HowItWork = () => {
   return (
     <div className="bg-offWhite pt-[128px] pb-[144px] max-xl:py-24 max-lg:py-20 max-md:py-16 max-sm:py-10">
       <div className="container">
-        <CustomHeading headingText="HOW IT WORKS" />
+        <CustomHeading headingText="HOW IT WORKS" myClass="max-md:text-center" />
         <div className="mt-[64px] max-md:mt-12 max-sm:mt-8">
           <div
             onClick={youtubeHandler}
