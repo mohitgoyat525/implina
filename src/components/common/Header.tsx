@@ -46,7 +46,7 @@ const Header = () => {
         <div className="flex items-center gap-[38px] max-md:flex-col">
           {HEADER_LIST.map((item, index) => (
             <p key={index}>
-              <Link
+              <Link onClick={closeHandler}
                 className="text-black font-sans-bold max-md:text-2xl max-sm:text-xl text-base font-bold leading-5 transition-all ease-linear duration-300 hover:text-offYellow"
                 href={item.path}
               >
