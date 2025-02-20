@@ -16,7 +16,7 @@ const HowItWork = () => {
         <div className="mt-[64px] max-md:mt-12 max-sm:mt-8">
           <div
             onClick={youtubeHandler}
-            className="bg-center bg-cover bg-no-repeat bg-youtubeBgImg min-w-[1064px] max-xl:max-w-[1064px] max-xl:min-w-min max-lg:h-[500px] max-md:h-[450px] max-sm:h-[320px] h-[580px] rounded-3xl relative"
+            className="bg-center bg-cover bg-no-repeat bg-youtubeBgImg min-w-[1064px] max-xl:max-w-[1064px] max-xl:min-w-min max-lg:h-[500px] max-md:h-[450px] max-sm:h-[320px] h-[595px] rounded-3xl relative"
           >
             {isVideoPlaying ? (
               <iframe

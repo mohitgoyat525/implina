@@ -1,15 +1,4 @@
-@font-face {
-  font-family: "source-sans-bold";
-  src: url("../../public/assets/fonts/SourceSansPro-Bold.otf")}
-@font-face {
-  font-family: "source-sans-regular";
-  src: url("../../public/assets/fonts/SourceSansPro-Regular.otf")}
-@font-face {
-  font-family: "source-sans-light";
-  src: url("../../public/assets/fonts/SourceSansPro-Light.otf")}
-@font-face {
-  font-family: "source-sans-semibold";
-  src: url("../../public/assets/fonts/SourceSansPro-Semibold.otf")}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 
 @tailwind base;
@@ -22,3 +11,6 @@
 }
 
 
+ body{
+    font-family: 'Source Sans 3', sans-serif;
+ }

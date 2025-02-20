@@ -11,10 +11,7 @@ export default {
       center: true,
       padding: "16px",
       screens: {
-        "2xl": "1064px",
-        lg: "992px",
-        md: "768px",
-        sm: "576px",
+        "2xl": "1140px",
       },
     },
     extend: {
@@ -23,6 +20,8 @@ export default {
         offWhite: "#F5F5F5",
         darkBlack: "#1D1D1B",
         lightRed: "#FF132D",
+        lightBlue: "#009FE3",
+        goldBox: "#FEBE32",
       },
       backgroundImage: {
         heroBgImg: "url('/assets/images/webp/hero-bg-img.webp')",
@@ -33,12 +32,6 @@ export default {
         custom2Xl: "49px",
         custom3Xl: "76px",
         custom4xl: "80px",
-      },
-      fontFamily: {
-        "sans-bold": "source-sans-bold , sans-sarif",
-        "sans-light": "source-sans-light ,sans-sarif",
-        "sans-regular": "source-sans-regular , sans-sarif",
-        "sans-semibold": "source-sans-semobold ,sans-sarif",
       },
     },
   },
