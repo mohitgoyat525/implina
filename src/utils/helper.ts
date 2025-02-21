@@ -48,7 +48,7 @@ interface kickBoxNum {
 export const HEADER_LIST : HeaderItem[] = [
   {
     name: "Home",
-    path: "/home",
+    path: "#home",
   },
   {
     name: "Stories",
