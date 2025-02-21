@@ -33,7 +33,7 @@ const KickboxProcess = () => {
                       : i === 1
                       ? "text-lightBlue"
                       : "text-goldBox"
-                  } font-semibold text-[21px] max-sm:text-lg leading-[21px]`}
+                  } font-semibold text-customXl max-sm:text-lg leading-[21px]`}
                 >
                   {obj.subTitle}
                 </p>

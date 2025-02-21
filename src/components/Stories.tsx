@@ -17,7 +17,7 @@ const Stories = () => {
   return (
     <div className="pt-32 pb-36 max-md:py-20 max-sm:py-12">
       <div className="max-w-[1103px] mx-auto px-4">
-        <CustomHeading myClass="" headingText="INTRAPRENEURSHIP STORIES" />
+        <CustomHeading myClass="max-md:text-center" headingText="INTRAPRENEURSHIP STORIES" />
         <div className="flex -mx-[25.5px] max-lg:-mx-3 max-md:flex-wrap justify-center">
           {STORIES_LIST.map((obj: StoriesItem, i: number) => (
             <div

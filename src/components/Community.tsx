@@ -22,7 +22,10 @@ const OurCommunity = () => {
           <span className="w-6 h-[2px] bg-black -rotate-45 translate-y-1 translate-x-0.5"></span>
         </div>
 
-        <CustomHeading headingText="WHAT OUR COMMUNITY SAYS" myClass="max-md:text-center" />
+        <CustomHeading
+          headingText="WHAT OUR COMMUNITY SAYS"
+          myClass="max-md:text-center"
+        />
 
         <div className="pt-36 max-lg:pt-28 max-md:pt-14 max-sm:pt-8">
           <Swiper
@@ -54,7 +57,7 @@ const OurCommunity = () => {
                 this in many projects. Take the time to be courageous and active
                 with new ideas!
               </p>
-              <div className="text-start flex items-center gap-3.5 pl-[84px] pt-[30px] max-sm:pt-5">
+              <div className="text-start flex items-center max-md:justify-center gap-3.5 pl-[84px] max-md:pl-0 pt-[30px] max-sm:pt-5">
                 <Image
                   width={80}
                   height={80}
@@ -91,7 +94,7 @@ const OurCommunity = () => {
                 this in many projects. Take the time to be courageous and active
                 with new ideas!
               </p>
-              <div className="text-start flex items-center gap-3.5 pl-[84px] pt-[30px] max-sm:pt-5">
+              <div className="text-start flex items-center gap-3.5 max-md:justify-center pl-[84px] max-md:pl-0 pt-[30px] max-sm:pt-5">
                 <Image
                   width={80}
                   height={80}
@@ -102,7 +105,7 @@ const OurCommunity = () => {
                 <div>
                   <Description
                     text="Head Division Buildings"
-                    myClass="text-[#8F9090] font-semibold font-sans-semibold tracking-normal leading-custom-xs"
+                    myClass="!text-[#8F9090] font-semibold font-sans-semibold tracking-normal leading-custom-xs"
                   />
                   <Description
                     text="Jens Vollmar"
@@ -112,7 +115,7 @@ const OurCommunity = () => {
               </div>
               <CustomBtn
                 text="Join the community!"
-                myClass="!text-lightRed mx-auto mt-[62px] max-lg:mt-10 max-md:mt-8 border-lightRed rounded-full min-w-[268px] h-[58px] flex items-center justify-center max-sm:text-lg hover:text-white hover:bg-lightRed max-sm:h-[47px] max-sm:min-w-[225px]"
+                myClass="!text-lightRed mx-auto mt-[62px] max-lg:mt-10 max-md:mt-8 border-lightRed rounded-full min-w-[268px] h-[58px] flex items-center justify-center max-sm:text-lg hover:!text-white hover:bg-lightRed max-sm:h-[47px] max-sm:min-w-[225px]"
               />
             </SwiperSlide>
           </Swiper>

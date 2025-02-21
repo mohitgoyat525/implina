@@ -22,6 +22,7 @@ export default {
         lightRed: "#FF132D",
         lightBlue: "#009FE3",
         goldBox: "#FEBE32",
+        darkGray: "#9DA1A2",
       },
       backgroundImage: {
         heroBgImg: "url('/assets/images/webp/hero-bg-img.webp')",
