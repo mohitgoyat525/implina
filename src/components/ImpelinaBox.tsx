@@ -12,10 +12,7 @@ const ImpelinaBox = () => {
     triggerOnce: true,
     onChange: (inView) =>setCount(inView),
   });
-  interface CustomHeadingProps {
-    headingText: string;
-    myClass: string;
-  }
+
   return (
     <div className=" container pt-[134px] pb-[128px] max-xl:py-24 max-lg:py-20 max-md:py-14 max-sm:py-10">
       <CustomHeading headingText="IMPLENIA KICKBOX" myClass="max-md:text-center" />

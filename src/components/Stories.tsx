@@ -1,17 +1,10 @@
 "use client";
 import React from "react";
-import Heading from "./common/CustomHeading";
-import Description from "./common/CustomDiscription";
 import CustomButton from "./common/CustomBtn";
 import { STORIES_LIST } from "@/utils/helper";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import CustomHeading from "./common/CustomHeading";
 
-interface StoriesItem {
-  image: StaticImageData;
-  imageAlt: string;
-  title: string;
-}
 
 const Stories = () => {
   return (
@@ -22,7 +15,7 @@ const Stories = () => {
           headingText="INTRAPRENEURSHIP STORIES"
         />
         <div className="flex -mx-[25.5px] max-lg:-mx-3 max-md:flex-wrap justify-center">
-          {STORIES_LIST.map((obj: StoriesItem, i: number) => (
+          {STORIES_LIST.map((obj ,i) => (
             <div
               key={i}
               className="w-1/3 max-md:w-1/2 max-sm:w-full px-[25.5px] max-lg:px-3 pt-[25px]"

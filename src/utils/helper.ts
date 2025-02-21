@@ -1,14 +1,19 @@
 
-import redKickbox from "../../public/assets/images/png/kick-box-red.png";
-import blueKickbox from "../../public/assets/images/png/kick-box-blue.png";
-import yellowKickbox from "../../public/assets/images/png/kick-box-yellow.png";
-import family from "../../public/assets/images/webp/family.webp";
-import station from "../../public/assets/images/webp/station.webp";
-import tunnel from "../../public/assets/images/webp/tunnel.webp";
+
 
 interface FaqItem {
   title: string;
   description: string;
+}
+
+interface KickBoxItem{
+  image: string;
+  imageAlt: string;
+  subTitle: string;
+  title: string;
+  description: string;
+  boxDuration: string;
+  budget: string;
 }
 
 interface SliderItem {
@@ -29,6 +34,16 @@ interface HeaderItem {
   path: string;
 }
 
+interface StoriesItem {
+  image: string;
+  imageAlt: string;
+  title: string;
+}
+
+interface kickBoxNum {
+  number: number;
+  name: string;
+}
 
 export const HEADER_LIST : HeaderItem[] = [
   {
@@ -49,7 +64,7 @@ export const HEADER_LIST : HeaderItem[] = [
   },
 ];
 
-export const KICKBOX_LIST  = [
+export const KICKBOX_LIST :kickBoxNum[] = [
   {
     number: +155,
     name: "Ideas submitted",
@@ -64,9 +79,9 @@ export const KICKBOX_LIST  = [
   },
 ];
 
-export const KICKBOX_PROCESS_LIST = [
+export const KICKBOX_PROCESS_LIST: KickBoxItem[] = [
   {
-    image: redKickbox,
+    image: "/public/assets/images/png/kick-box-red.png",
     imageAlt: "red-kickbox",
     subTitle: "Validate",
     title: "RedBox",
@@ -76,7 +91,7 @@ export const KICKBOX_PROCESS_LIST = [
     budget: "Start Budget: 700 CHF/EUR 20% of your working time",
   },
   {
-    image: blueKickbox,
+    image: "/assets/images/png/kick-box-blue.png",
     imageAlt: "blue-kickbox",
     subTitle: "Pilot",
     title: "BlueBox",
@@ -86,7 +101,7 @@ export const KICKBOX_PROCESS_LIST = [
     budget: "Budget: According to funding 20% of  your working time",
   },
   {
-    image: yellowKickbox,
+    image: "/assets/images/png/kick-box-yellow.png",
     imageAlt: "yellow-kickbox",
     subTitle: "Implement",
     title: "GoldBox",
@@ -97,19 +112,19 @@ export const KICKBOX_PROCESS_LIST = [
   },
 ];
 
-export const STORIES_LIST = [
+export const STORIES_LIST : StoriesItem[] = [
   {
-    image: family,
+    image: "/assets/images/webp/family.webp",
     imageAlt: "family",
     title: "Family Friendly Implenia",
   },
   {
-    image: station,
+    image: "/assets/images/webp/station.webp",
     imageAlt: "station",
     title: "Mobile SOS-Station",
   },
   {
-    image: tunnel,
+    image: "/assets/images/webp/tunnel.webp",
     imageAlt: "tunnel",
     title: "HPS-EPS Tunnelelement",
   },
