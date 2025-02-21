@@ -3,11 +3,13 @@ import React from "react";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/pagination"; 
+import "swiper/css/pagination";
 import Image from "next/image";
 import Description from "./common/CustomDiscription";
 import CustomBtn from "./common/CustomBtn";
 import CustomHeading from "./common/CustomHeading";
+import { SLIDER_LIST } from "@/utils/helper";
+
 
 const OurCommunity = () => {
   return (
@@ -43,81 +45,46 @@ const OurCommunity = () => {
           >
             <div className="swiper-pagination max-lg:block hidden"></div>
 
-            <SwiperSlide className="text-center max-lg:pb-[100px] max-md:pb-[55px]">
-              <Image
-                src="/assets/images/svg/semi-colon.svg"
-                alt="semi-colon"
-                width={127}
-                height={44}
-                className="max-w-[127px] mx-auto mb-[40px] h-[44px]"
-              />
-              <p className="text-[32px] max-md:text-2xl max-sm:text-xl font-semibold font-sans-semibold max-w-[795px] mx-auto text-center leading-custom-2xl">
-                With innovative and efficient solutions we can surprise our
-                customers and increase our chances of success - I experienced
-                this in many projects. Take the time to be courageous and active
-                with new ideas!
-              </p>
-              <div className="text-start flex items-center max-md:justify-center gap-3.5 pl-[84px] max-md:pl-0 pt-[30px] max-sm:pt-5">
+            {SLIDER_LIST.map((slide, index) => (
+              <SwiperSlide
+                key={index}
+                className="text-center max-lg:pb-[100px] max-md:pb-[55px]"
+              >
                 <Image
-                  width={80}
-                  height={80}
-                  src="/assets/images/png/jens-user-img.png"
-                  alt="user"
+                  src={slide.semiColonSrc}
+                  alt="semi-colon"
+                  width={127}
+                  height={44}
+                  className="max-w-[127px] mx-auto mb-[40px] h-[44px]"
                 />
-                <div>
-                  <Description
-                    text="Head Division Buildings"
-                    myClass="!text-[#8F9090] font-semibold font-sans-semibold tracking-normal leading-custom-xs"
+                <p className="text-[32px] max-md:text-2xl max-sm:text-xl font-semibold font-sans-semibold max-w-[795px] mx-auto text-center leading-custom-2xl">
+                  {slide.descriptionText}
+                </p>
+                <div className="text-start flex items-center max-md:justify-center gap-3.5 pl-[84px] max-md:pl-0 pt-[30px] max-sm:pt-5">
+                  <Image
+                    width={80}
+                    height={80}
+                    className="object-cover"
+                    src={slide.userImgSrc}
+                    alt="user"
                   />
-                  <Description
-                    text="Jens Vollmar"
-                    myClass="font-semibold font-sans-semibold tracking-normal leading-custom-xs"
-                  />
+                  <div>
+                    <Description
+                      text={slide.role}
+                      myClass="!text-[#8F9090] font-semibold font-sans-semibold tracking-normal leading-custom-xs"
+                    />
+                    <Description
+                      text={slide.name}
+                      myClass="font-semibold font-sans-semibold tracking-normal leading-custom-xs"
+                    />
+                  </div>
                 </div>
-              </div>
-              <CustomBtn
-                text="Join the community!"
-                myClass="text-lightRed mx-auto border-lightRed mt-[62px] max-lg:mt-10 max-md:mt-8 rounded-full min-w-[268px] h-[58px] flex items-center justify-center max-sm:text-lg hover:text-white hover:bg-lightRed max-sm:h-[47px] max-sm:min-w-[225px]"
-              />
-            </SwiperSlide>
-            <SwiperSlide className="text-center max-lg:pb-[100px] max-md:pb-[55px]">
-              <Image
-                src="/assets/images/svg/semi-colon.svg"
-                alt="semi-colon"
-                width={127}
-                height={44}
-                className="max-w-[127px] mx-auto mb-[40px] h-[44px]"
-              />
-              <p className="text-[32px] max-md:text-2xl max-sm:text-xl font-semibold font-sans-semibold max-w-[795px] mx-auto text-center leading-custom-2xl">
-                With innovative and efficient solutions we can surprise our
-                customers and increase our chances of success - I experienced
-                this in many projects. Take the time to be courageous and active
-                with new ideas!
-              </p>
-              <div className="text-start flex items-center gap-3.5 max-md:justify-center pl-[84px] max-md:pl-0 pt-[30px] max-sm:pt-5">
-                <Image
-                  width={80}
-                  height={80}
-                  className="object-cover"
-                  src="/assets/images/png/jens-user-img.png"
-                  alt="user"
+                <CustomBtn
+                  text="Join the community!"
+                  myClass="!text-lightRed mx-auto mt-[62px] max-lg:mt-10 max-md:mt-8 border-lightRed rounded-full min-w-[268px] h-[58px] flex items-center justify-center max-sm:text-lg hover:!text-white hover:bg-lightRed max-sm:h-[47px] max-sm:min-w-[225px]"
                 />
-                <div>
-                  <Description
-                    text="Head Division Buildings"
-                    myClass="!text-[#8F9090] font-semibold font-sans-semibold tracking-normal leading-custom-xs"
-                  />
-                  <Description
-                    text="Jens Vollmar"
-                    myClass="font-semibold font-sans-semibold tracking-normal leading-custom-xs"
-                  />
-                </div>
-              </div>
-              <CustomBtn
-                text="Join the community!"
-                myClass="!text-lightRed mx-auto mt-[62px] max-lg:mt-10 max-md:mt-8 border-lightRed rounded-full min-w-[268px] h-[58px] flex items-center justify-center max-sm:text-lg hover:!text-white hover:bg-lightRed max-sm:h-[47px] max-sm:min-w-[225px]"
-              />
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

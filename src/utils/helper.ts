@@ -153,3 +153,23 @@ export const FOOTER_LIST = [
     link: "#contact",
   },
 ];
+
+export const SLIDER_LIST = [
+  {
+    semiColonSrc: "/assets/images/svg/semi-colon.svg",
+    descriptionText:
+      "With innovative and efficient solutions we can surprise our customers and increase our chances of success - I experienced this in many projects. Take the time to be courageous and active with new ideas!",
+    userImgSrc: "/assets/images/png/jens-user-img.png",
+    role: "Head Division Buildings",
+    name: "Jens Vollmar",
+  },
+  {
+    semiColonSrc: "/assets/images/svg/semi-colon.svg",
+    descriptionText:
+      "With innovative and efficient solutions we can surprise our customers and increase our chances of success - I experienced this in many projects. Take the time to be courageous and active with new ideas!",
+    userImgSrc: "/assets/images/png/jens-user-img.png",
+    role: "Head Division Buildings",
+    name: "Jens Vollmar",
+  },
+  // You can add more slides here as needed
+];
