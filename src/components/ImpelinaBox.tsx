@@ -34,7 +34,7 @@ const ImpelinaBox = () => {
               <p className="font-normal text-custom4xl font-sans-regular leading-[100px] text-offYellow max-xl:text-6xl  max-md:text-5xl max-sm:text-4xl">
                 +<CountUp start={0} end={count && i === 0 ? 155:count && i === 1 ? 325 : i === 2 ? 250:0} duration={5}/>
               </p>
-              <p className="font-bold font-sans-bold text-customXl leading-[21px] whitespace-nowrap">
+              <p className="font-bold font-sans-bold text-customXl leading-[21px] whitespace-nowrap translate-x-[10px] translate-y-[-5px]">
                 {item.name}
               </p>
             </div>

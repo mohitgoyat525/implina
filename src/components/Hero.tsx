@@ -15,11 +15,11 @@ const Hero = () => {
   return (
     <div className="bg-center bg-cover bg-no-repeat bg-heroBgImg relative overflow-hidden">
       <div className="bg-white">
-        <div className="container">
+        <div className="max-w-[1100px] mx-auto px-4">
           <Header />
         </div>
       </div>
-      <div className=" container pt-[230px] pb-[226px] max-lg:py-44 max-md:py-24 max-sm:py-20 relative max-xl:z-20">
+      <div className=" max-w-[1100px] mx-auto px-4 pt-[230px] pb-[226px] max-lg:py-44 max-md:py-24 max-sm:py-20 relative max-xl:z-20">
         <p className="text-white text-shadow text-customXl max-sm:text- font-bold font-sans-bold leading-[21px] max-md:text-center">
           Shape the future of Implenia!
         </p>

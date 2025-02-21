@@ -22,7 +22,7 @@ const Faq = () => {
           >
             <button
               onClick={() => toggleAccordion(index)}
-              className="text-customXl text-start font-semibold leading-[21px] max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] text-blackLight flex justify-between items-center w-full py-2"
+              className="text-customXl text-start font-semibold leading-[21px] max-lg:text-xl max-md:text-lg max-sm:text-base max-lg:leading-[18px] max-md:leading-[16px] max-sm:leading-[14px] text-blackLight flex justify-between items-center w-full"
             >
               {data.title}
               <Image
@@ -31,7 +31,7 @@ const Faq = () => {
                   openIndex === index
                     ? "rotate-[90deg] transition-all duration-300"
                     : "rotate-0 transition-all duration-300"
-                }`}
+                } my-[22px] max-md:my-[15px] max-sm:my-[10px]`}
                 src={FaqArrow}
                 alt="arrow"
               />
