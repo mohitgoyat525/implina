@@ -31,7 +31,7 @@ const Faq = () => {
                   openIndex === index
                     ? "rotate-[90deg] transition-all duration-300"
                     : "rotate-0 transition-all duration-300"
-                } my-[22px] max-md:my-[15px] max-sm:my-[10px]`}
+                } my-[22px] max-md:my-[15px] max-sm:my-[10px] max-md:max-w-[15px]`}
                 src={FaqArrow}
                 alt="arrow"
               />

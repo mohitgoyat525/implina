@@ -13,7 +13,10 @@ import { SLIDER_LIST } from "@/utils/helper";
 
 const OurCommunity = () => {
   return (
-    <div className="py-[129.5px] px-4 flex flex-col items-start max-lg:items-center max-xl:py-28 max-lg:pb-10 max-lg:pt-20 max-md:pt-14 bg-offWhite">
+    <div
+      id="community"
+      className="py-[129.5px] px-4 flex flex-col items-start max-lg:items-center max-xl:py-28 max-lg:pb-10 max-lg:pt-20 max-md:pt-14 bg-offWhite"
+    >
       <div className="container mx-auto relative">
         <div className="absolute top-[58%] -translate-y-1/2 flex rotate-90 left-0 prev-button z-50 cursor-pointer size-10 max-lg:hidden">
           <span className="w-6 h-[2px] bg-black rotate-45 translate-y-1 translate-x-[9.5px]"></span>

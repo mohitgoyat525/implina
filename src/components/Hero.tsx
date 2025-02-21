@@ -13,7 +13,7 @@ const Hero = () => {
     });
   }, []);
   return (
-    <div className="bg-center bg-cover bg-no-repeat bg-heroBgImg relative overflow-hidden">
+    <div id="home" className="bg-center bg-cover bg-no-repeat bg-heroBgImg relative overflow-hidden">
       <div className="bg-white">
         <div className="max-w-[1100px] mx-auto px-4">
           <Header />

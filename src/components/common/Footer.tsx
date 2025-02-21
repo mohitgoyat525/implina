@@ -5,7 +5,10 @@ import React from "react";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <div className="bg-black pt-[138px] pb-[65px] max-lg:pt-24 max-md:pt-14 max-sm:pt-10">
+    <div
+      id="contact"
+      className="bg-black pt-[138px] pb-[65px] max-lg:pt-24 max-md:pt-14 max-sm:pt-10"
+    >
       <div className="max-w-[1117px] flex container mx-auto justify-between max-lg:flex-wrap">
         <div className="max-w-[456px] w-fullx flex justify-between max-lg:flex-wrap">
           <div className="max-w-[289px]">

@@ -1,3 +1,4 @@
+
 import redKickbox from "../../public/assets/images/png/kick-box-red.png";
 import blueKickbox from "../../public/assets/images/png/kick-box-blue.png";
 import yellowKickbox from "../../public/assets/images/png/kick-box-yellow.png";
@@ -10,27 +11,45 @@ interface FaqItem {
   description: string;
 }
 
+interface SliderItem {
+  semiColonSrc: string;
+  descriptionText: string;
+  userImgSrc: string;
+  role: string;
+  name: string;
+}
 
-export const HEADER_LIST = [
+interface FooterItem{
+  title: string;
+  link: string;
+}
+
+interface HeaderItem {
+  name: string;
+  path: string;
+}
+
+
+export const HEADER_LIST : HeaderItem[] = [
   {
     name: "Home",
-    path: "/",
+    path: "/home",
   },
   {
     name: "Stories",
-    path: "/stories",
+    path: "#stories",
   },
   {
     name: "Community",
-    path: "/community",
+    path: "#community",
   },
   {
     name: "Contact",
-    path: "/contact",
+    path: "#contact",
   },
 ];
 
-export const KICKBOX_LIST = [
+export const KICKBOX_LIST  = [
   {
     number: +155,
     name: "Ideas submitted",
@@ -135,7 +154,7 @@ export const FAQ_LIST: FaqItem[] = [
   },
 ];
 
-export const FOOTER_LIST = [
+export const FOOTER_LIST : FooterItem[] = [
   {
     title: "Home",
     link: "#hero",
@@ -154,7 +173,7 @@ export const FOOTER_LIST = [
   },
 ];
 
-export const SLIDER_LIST = [
+export const SLIDER_LIST : SliderItem[] = [
   {
     semiColonSrc: "/assets/images/svg/semi-colon.svg",
     descriptionText:
@@ -171,5 +190,4 @@ export const SLIDER_LIST = [
     role: "Head Division Buildings",
     name: "Jens Vollmar",
   },
-  // You can add more slides here as needed
 ];
